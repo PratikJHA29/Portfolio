@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Good Vibes Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Good Vibes Form
+            </h1>
+            <p id="description">
+                Tell us somethings postive that happen to you today
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+<!-- Type Number section -->
+<div class="form-group">
+    <label for="phone">On a Scale of 1-10,How good was it ?</label>
+    <input type="number" name="number" id="number" class="formControl" placeholder="Enter a number between 1 and 10" required>
+</div>
+<!-- end of Number section -->
+
+<!-- Type Number section -->
+<div class="form-group">
+    <label for="address">Address <span class="clue">(optional)</span></label>
+    <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+</div>
+<!--  end of number section -->
+
+<!-- select section -->
+<div class="form-group">
+    <p id="quest">Where did it happen?</p>
+    <select name="role" required id="dropdown" class="formControl">
+        <option value disabled selected >Select option</option>
+        <option value="At Home">At Home</option>
+        <option value="on my commute"> on my commute</option>
+        <option value="At Work">At Work</option>
+        <option value="On the Street"> On the Street</option>
+    </select>
+</div>
+<!-- end of select section -->
+
+<!-- radio button section -->
+<div class="form-group">
+    <p id="quest"> At what time did it happen?</p>
+    <label for="">
+        <input type="radio" name="source" value="Moring"
+        class="inputRadio"
+        checked> Morning
+    </label>
+    <label for="">
+        <input type="radio" name="source" value="Afternoon"
+        class="inputRadio"
+        >Afternoon
+    </label>
+    <label for="">
+        <input type="radio" name="source" value="Evening"
+        class="inputRadio"
+        > Evening
+    </label>
+</div>
+<!-- end of radio button -->
+
+<!-- Checkbox section -->
+<div class="form-group">
+    <p id="quest">What Emotions did you Experince ? </p>
+    <label for="">
+        <input type="checkbox" name="prefer" class="checkbox" value="Exicted"> Exicted
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" class="checkbox" value="Humbled"> Humbled
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" class="checkbox" value="Elated">  Elated
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" class="checkbox" value="Loved"> Loved
+    </label>
+    <label for="">
+        <input type="checkbox" name="prefer" class="checkbox" value="Enthusiastic"> Enthusiastic
+    </label>
+</div>
+<!-- End of checkbox section -->
+
+<!-- Textarea section -->
+<div class="form-group">
+    <p id="quest">Plase describe your postive experince.</p>
+    <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your Experince here..."></textarea>
+</div>
+<div class="form-group">
+    <button type="submit" id="submit" class="btn">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
